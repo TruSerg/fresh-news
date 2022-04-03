@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="css/choices.min.css"
+    />
+    <script
+      defer
+      src="js/choices.min.js"
+    ></script>
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container flex-center">
         <img class="logo" src="img/logo.svg" alt="logo" />
         <form class="form-search flex-center">
-          <label class="searhc-label">
-            <input type="search" class="search-input" />
+          <div class="searhc-label">
+            <input type="search" class="search-input" name="search" />
             <button class="search-submit" type="submit">
               <svg
                 width="19"
@@ -30,7 +39,7 @@
                 />
               </svg>
             </button>
-          </label>
+          </div>
           <select name="country" class="js-choise">
             <option value="">Choose the country</option>
             <option value="ru">Russia</option>
@@ -49,106 +58,15 @@
       <div class="title-wrapper">
         <div class="container">
           <h1 class="visually-hidden">Only fresh news</h1>
-          <h2 class="title">
-            По вашему запросу “новости про IT” найдено 6 результатов
+          <h2 class="title hide">
+            Your search "IT news" found 6 results
           </h2>
         </div>
       </div>
       <section class="news">
         <h2 class="visually-hidden">News list</h2>
         <div class="container">
-          <ul class="news-list">
-            <li class="news-item">
-              <img class="news-image" src="img/news.jpg" alt="news image" />
-              <h3 class="news-title">
-                <a href="#" target="_blank" class="news-link"
-                  >Продажи китайских смартфонов в России выросли в два раза</a
-                >
-              </h3>
-              <p class="news-description">
-                По данным МТС, продажи устройств Huawei за первые две недели
-                марта увеличились на 300%...
-              </p>
-              <div class="news-footer">
-                <time class="news-datetime" datetime="2022-03-16T16:11:06Z">
-                  <span class="news-date">16/03/2022</span> 11:06
-                </time>
-                <div class="news-author">Эрик Крипке</div>
-              </div>
-            </li>
-            <li class="news-item">
-              <img class="news-image" src="img/news.jpg" alt="news image" />
-              <h3 class="news-title">
-                <a href="#" target="_blank" class="news-link"
-                  >Продажи китайских смартфонов в России выросли в два раза</a
-                >
-              </h3>
-              <p class="news-description">
-                По данным МТС, продажи устройств Huawei за первые две недели
-                марта увеличились на 300%...
-              </p>
-              <div class="news-footer">
-                <time class="news-datetime" datetime="2022-03-16T16:11:06Z">
-                  <span>16/03/2022</span> 11:06
-                </time>
-                <div class="news-author">Эрик Крипке</div>
-              </div>
-            </li>
-            <li class="news-item">
-              <img class="news-image" src="img/news.jpg" alt="news image" />
-              <h3 class="news-title">
-                <a href="#" target="_blank" class="news-link"
-                  >Продажи китайских смартфонов в России выросли в два раза</a
-                >
-              </h3>
-              <p class="news-description">
-                По данным МТС, продажи устройств Huawei за первые две недели
-                марта увеличились на 300%...
-              </p>
-              <div class="news-footer">
-                <time class="news-datetime" datetime="2022-03-16T16:11:06Z">
-                  <span>16/03/2022</span> 11:06
-                </time>
-                <div class="news-author">Эрик Крипке</div>
-              </div>
-            </li>
-            <li class="news-item">
-              <img class="news-image" src="img/news.jpg" alt="news image" />
-              <h3 class="news-title">
-                <a href="#" target="_blank" class="news-link"
-                  >Продажи китайских смартфонов в России выросли в два раза</a
-                >
-              </h3>
-              <p class="news-description">
-                По данным МТС, продажи устройств Huawei за первые две недели
-                марта увеличились на 300%...
-              </p>
-              <div class="news-footer">
-                <time class="news-datetime" datetime="2022-03-16T16:11:06Z">
-                  <span>16/03/2022</span> 11:06
-                </time>
-                <div class="news-author">Эрик Крипке</div>
-              </div>
-            </li>
-            <li class="news-item">
-              <img class="news-image" src="img/news.jpg" alt="news image" />
-              <h3 class="news-title">
-                <a href="#" target="_blank" class="news-link"
-                  >Продажи китайских смартфонов в России выросли в два раза</a
-                >
-              </h3>
-              <p class="news-description">
-                По данным МТС, продажи устройств Huawei за первые две недели
-                марта увеличились на 300%...
-              </p>
-              <div class="news-footer">
-                <time class="news-datetime" datetime="2022-03-16T16:11:06Z">
-                  <span>16/03/2022</span> 11:06
-                </time>
-                <div class="news-author">Эрик Крипке</div>
-              </div>
-            </li>
-          </ul>
+          <ul class="news-list"></ul>
         </div>
       </section>
     </main>
